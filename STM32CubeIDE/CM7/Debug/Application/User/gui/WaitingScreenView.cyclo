@@ -1,0 +1,9 @@
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+../../CM7/../../CM7/TouchGFX/generated/gui_generated/include/gui_generated/waitingscreen_screen/WaitingScreenViewBase.hpp:26:18:virtual void WaitingScreenViewBase::action1()	1
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/gui/src/waitingscreen_screen/WaitingScreenView.cpp:13:6:virtual void WaitingScreenView::tearDownScreen()	1
+../../CM7/../../CM7/TouchGFX/gui/include/gui/waitingscreen_screen/WaitingScreenView.hpp:11:13:WaitingScreenView::~WaitingScreenView()	1
+../../CM7/../../CM7/TouchGFX/gui/include/gui/waitingscreen_screen/WaitingScreenView.hpp:11:13:virtual WaitingScreenView::~WaitingScreenView()	1
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/gui/src/waitingscreen_screen/WaitingScreenView.cpp:3:1:WaitingScreenView::WaitingScreenView()	1
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/gui/src/waitingscreen_screen/WaitingScreenView.cpp:8:6:virtual void WaitingScreenView::setupScreen()	1

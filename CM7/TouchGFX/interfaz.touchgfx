@@ -1,0 +1,1272 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": -88,
+            "Y": -35,
+            "Width": 1024,
+            "Height": 600,
+            "RelativeFilename": "__generated\\clay_theme_images_backgrounds_1024x600_meteor_rain.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2_1",
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\clay_theme_images_bars_800x480_bottom_base.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Y": 400,
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\clay_theme_images_bars_800x480_bottom_base.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 261,
+            "Y": 400,
+            "Width": 264,
+            "Height": 80,
+            "Pressed": "__generated\\clay_theme_images_widgets_button_regular_height_36_medium_round_disabled.png",
+            "Released": "__generated\\clay_theme_images_widgets_button_regular_height_36_medium_round_disabled.png",
+            "Preset": "clay_theme\\presets\\button\\regular\\height_36\\medium_round_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 377,
+            "Y": 430,
+            "Width": 47,
+            "Height": 20,
+            "TextId": "__SingleUse_6YQL",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen2"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action1"
+          }
+        ]
+      },
+      {
+        "Name": "Screen2",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": -99,
+            "Y": -42,
+            "Width": 1024,
+            "Height": 600,
+            "RelativeFilename": "__generated\\clay_theme_images_backgrounds_1024x600_meteor_rain.png"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_16",
+            "X": 750,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_15",
+            "X": 700,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_14",
+            "X": 650,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_13",
+            "X": 600,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_12",
+            "X": 750,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_11",
+            "X": 700,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_10",
+            "X": 650,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_9",
+            "X": 600,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_8",
+            "X": 750,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_7",
+            "X": 700,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_6",
+            "X": 650,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_5",
+            "X": 600,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_4",
+            "X": 750,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_3",
+            "X": 700,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_2",
+            "X": 650,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_3_1",
+            "X": 600,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_16",
+            "X": 550,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_15",
+            "X": 500,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_14",
+            "X": 450,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_13",
+            "X": 400,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_12",
+            "X": 550,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_11",
+            "X": 500,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_10",
+            "X": 450,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_9",
+            "X": 400,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_8",
+            "X": 550,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_7",
+            "X": 500,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_6",
+            "X": 450,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_5",
+            "X": 400,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_4",
+            "X": 550,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_3",
+            "X": 500,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_2",
+            "X": 450,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_2_1",
+            "X": 400,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_16",
+            "X": 350,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_15",
+            "X": 300,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_14",
+            "X": 250,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_13",
+            "X": 200,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_12",
+            "X": 350,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_11",
+            "X": 300,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_10",
+            "X": 250,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_9",
+            "X": 200,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_8",
+            "X": 350,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_7",
+            "X": 300,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_6",
+            "X": 250,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_5",
+            "X": 200,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_4",
+            "X": 350,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_3",
+            "X": 300,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_2",
+            "X": 250,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_1_1",
+            "X": 200,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_16",
+            "X": 150,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_15",
+            "X": 100,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_14",
+            "X": 50,
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_13",
+            "Y": 308,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_12",
+            "X": 150,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_11",
+            "X": 100,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_10",
+            "X": 50,
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_9",
+            "Y": 258,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_8",
+            "X": 150,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_7",
+            "X": 100,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_6",
+            "X": 50,
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_5",
+            "Y": 208,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_4",
+            "X": 150,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_3",
+            "X": 100,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_2",
+            "X": 50,
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "RadioButton",
+            "Name": "RadioButton_0_1",
+            "Y": 158,
+            "Width": 50,
+            "Height": 50,
+            "FileNameSelected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_action.png",
+            "FileNameSelectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_on_pressed.png",
+            "FileNameUnselected": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off.png",
+            "FileNameUnselectedPressed": "__generated\\alternate_theme_images_widgets_radiobutton_radio_large_rounded_off_pressed.png",
+            "RadioButtonGroup": "radioButtonGroup1",
+            "Preset": "alternate_theme\\presets\\radiobutton\\radio\\large_action_rounded.json"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2_1",
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\clay_theme_images_bars_800x480_bottom_base.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Y": 400,
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\clay_theme_images_bars_800x480_bottom_base.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Nex",
+            "X": 615,
+            "Y": 415,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_normal.png",
+            "TextId": "__SingleUse_MET4",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_normal.json"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 268,
+            "Y": 400,
+            "Width": 264,
+            "Height": 80,
+            "Pressed": "__generated\\clay_theme_images_widgets_button_regular_height_36_medium_round_disabled.png",
+            "Released": "__generated\\clay_theme_images_widgets_button_regular_height_36_medium_round_disabled.png",
+            "Preset": "clay_theme\\presets\\button\\regular\\height_36\\medium_round_disabled.json"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "Back",
+            "X": 75,
+            "Y": 415,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_pressed.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_normal.png",
+            "TextId": "__SingleUse_ORKE",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0",
+            "Preset": "alternate_theme\\presets\\button\\regular\\height_50\\tiny_round_normal.json"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Nex"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "WaitingScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Back"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "RadioButton_0_1"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "#include <gui/screen2_screen/Screen2Presenter.hpp>",
+              "Code": "presenter->selectMatrizLed(0, 8 , 1);"
+            }
+          },
+          {
+            "InteractionName": "Interaction4",
+            "Trigger": {
+              "Type": "TriggerRadioButtonSelected",
+              "TriggerComponent": "RadioButton_0_2"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "#include <gui/screen2_screen/Screen2Presenter.hpp>",
+              "Code": "presenter->selectMatrizLed(0, 8 , 1);"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action1"
+          }
+        ]
+      },
+      {
+        "Name": "WaitingScreen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": -88,
+            "Y": -35,
+            "Width": 1024,
+            "Height": 600,
+            "RelativeFilename": "__generated\\clay_theme_images_backgrounds_1024x600_meteor_rain.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2_1",
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\clay_theme_images_bars_800x480_bottom_base.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Y": 400,
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\clay_theme_images_bars_800x480_bottom_base.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 268,
+            "Y": 400,
+            "Width": 264,
+            "Height": 80,
+            "Pressed": "__generated\\clay_theme_images_widgets_button_regular_height_36_medium_round_disabled.png",
+            "Released": "__generated\\clay_theme_images_widgets_button_regular_height_36_medium_round_disabled.png",
+            "Preset": "clay_theme\\presets\\button\\regular\\height_36\\medium_round_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 377,
+            "Y": 430,
+            "Width": 47,
+            "Height": 20,
+            "TextId": "__SingleUse_ZVLI",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "BoxProgress",
+            "Name": "boxProgress1",
+            "X": 300,
+            "Y": 342,
+            "Width": 200,
+            "Height": 10,
+            "Color": {
+              "Green": 240,
+              "Blue": 255
+            },
+            "Direction": "Right",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_boxprogress_normal_small.png",
+            "IndicatorPositionWidth": 300,
+            "IndicatorPositionHeight": 10,
+            "ProgressRangeMax": 100,
+            "ProgressInitialValue": 60
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen2"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action1"
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "interfaz",
+    "Resolution": {
+      "Width": 800,
+      "Height": 480
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      24
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp",
+      "24": "LCD24bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 800,
+        "Height": 480
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD24bpp": {
+        "Id": "LCD24bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../../gcc/Makefile flash",
+    "FlashTargetIntCommandOverride": "make -f ../../gcc/Makefile intflash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32H7",
+    "SubFamily": "STM32H747/757",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m7",
+    "ProjectFile": "../../STM32H747I-DISCO.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts",
+      "Video"
+    ]
+  },
+  "Version": "4.24.2",
+  "CreatedBy": "4.24.2"
+}

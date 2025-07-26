@@ -1,0 +1,8 @@
+../Application/User/Core/led_matrix_control.c:18:6:MAX7219_CS_Enable	0	static
+../Application/User/Core/led_matrix_control.c:22:6:MAX7219_CS_Disable	0	static
+../Application/User/Core/led_matrix_control.c:46:6:MatrizLedSelect	24	static
+../Application/User/Core/led_matrix_control.c:84:6:MAX7219_ClearAll	24	static
+../Application/User/Core/led_matrix_control.c:103:19:MAX7219_SendToAll	16	static
+../Application/User/Core/led_matrix_control.c:26:6:MAX7219_BlinkTest	24	static
+../Application/User/Core/led_matrix_control.c:124:6:MAX7219_ResetAll	16	static
+../Application/User/Core/led_matrix_control.c:133:6:MAX7219_LightSingleLed	16	static
