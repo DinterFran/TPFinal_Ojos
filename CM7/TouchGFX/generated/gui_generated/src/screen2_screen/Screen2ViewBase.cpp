@@ -18,6 +18,8 @@ Screen2ViewBase::Screen2ViewBase() :
     image1.setBitmap(touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_BACKGROUNDS_1024X600_METEOR_RAIN_ID));
     add(image1);
 
+    radioButtonGroup1.setRadioButtonSelectedHandler(radioButtonSelectedCallback);
+    
     RadioButton_3_16.setXY(750, 308);
     RadioButton_3_16.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_RADIOBUTTON_RADIO_LARGE_ROUNDED_OFF_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_RADIOBUTTON_RADIO_LARGE_ROUNDED_OFF_PRESSED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_RADIOBUTTON_RADIO_LARGE_ROUNDED_ON_ACTION_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_RADIOBUTTON_RADIO_LARGE_ROUNDED_ON_PRESSED_ID));
     RadioButton_3_16.setSelected(false);
@@ -452,8 +454,6 @@ Screen2ViewBase::Screen2ViewBase() :
     radioButtonGroup1.add(RadioButton_0_3);
     add(RadioButton_0_3);
 
-    radioButtonGroup1.setRadioButtonSelectedHandler(radioButtonSelectedCallback);
-    
     RadioButton_0_2.setXY(50, 158);
     RadioButton_0_2.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_RADIOBUTTON_RADIO_LARGE_ROUNDED_OFF_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_RADIOBUTTON_RADIO_LARGE_ROUNDED_OFF_PRESSED_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_RADIOBUTTON_RADIO_LARGE_ROUNDED_ON_ACTION_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_RADIOBUTTON_RADIO_LARGE_ROUNDED_ON_PRESSED_ID));
     RadioButton_0_2.setSelected(false);
@@ -532,13 +532,447 @@ void Screen2ViewBase::radioButtonSelectedCallbackHandler(const touchgfx::Abstrac
         //Interaction3
         //When RadioButton_0_1 selected execute C++ code
         //Execute C++ code
-        presenter->selectMatrizLed(0, 8 , 1);
+        presenter->selectMatrizLed(0, 4 , 0);
     }
     if (&src == &RadioButton_0_2)
     {
         //Interaction4
         //When RadioButton_0_2 selected execute C++ code
         //Execute C++ code
-        presenter->selectMatrizLed(0, 8 , 1);
+        presenter->selectMatrizLed(0, 4 , 1);
+    }
+    if (&src == &RadioButton_0_3)
+    {
+        //Interaction5
+        //When RadioButton_0_3 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 4 , 2);
+    }
+    if (&src == &RadioButton_0_4)
+    {
+        //Interaction6
+        //When RadioButton_0_4 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 4 , 3);
+    }
+    if (&src == &RadioButton_0_5)
+    {
+        //Interaction7
+        //When RadioButton_0_5 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 3 , 0);
+    }
+    if (&src == &RadioButton_0_6)
+    {
+        //Interaction8
+        //When RadioButton_0_6 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 3 , 1);
+    }
+    if (&src == &RadioButton_0_7)
+    {
+        //Interaction9
+        //When RadioButton_0_7 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 3 , 2);
+    }
+    if (&src == &RadioButton_0_8)
+    {
+        //Interaction10
+        //When RadioButton_0_8 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 3 , 3);
+    }
+    if (&src == &RadioButton_0_9)
+    {
+        //Interaction11
+        //When RadioButton_0_9 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 2 , 0);
+    }
+    if (&src == &RadioButton_0_10)
+    {
+        //Interaction12
+        //When RadioButton_0_10 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 2 , 1);
+    }
+    if (&src == &RadioButton_0_11)
+    {
+        //Interaction13
+        //When RadioButton_0_11 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 2 , 2);
+    }
+    if (&src == &RadioButton_0_12)
+    {
+        //Interaction14
+        //When RadioButton_0_12 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 2 , 3);
+    }
+    if (&src == &RadioButton_0_13)
+    {
+        //Interaction15
+        //When RadioButton_0_13 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 1 , 0);
+    }
+    if (&src == &RadioButton_0_14)
+    {
+        //Interaction16
+        //When RadioButton_0_14 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 1 , 1);
+    }
+    if (&src == &RadioButton_0_15)
+    {
+        //Interaction17
+        //When RadioButton_0_15 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 1 , 2);
+    }
+    if (&src == &RadioButton_0_16)
+    {
+        //Interaction18
+        //When RadioButton_0_16 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(0, 1 , 3);
+    }
+    if (&src == &RadioButton_1_1)
+    {
+        //Interaction19
+        //When RadioButton_1_1 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 4 , 0);
+    }
+    if (&src == &RadioButton_1_2)
+    {
+        //Interaction20
+        //When RadioButton_1_2 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 4 , 1);
+    }
+    if (&src == &RadioButton_1_3)
+    {
+        //Interaction21
+        //When RadioButton_1_3 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 4 , 2);
+    }
+    if (&src == &RadioButton_1_4)
+    {
+        //Interaction22
+        //When RadioButton_1_4 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 4 , 3);
+    }
+    if (&src == &RadioButton_1_5)
+    {
+        //Interaction23
+        //When RadioButton_1_5 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 3 , 0);
+    }
+    if (&src == &RadioButton_1_6)
+    {
+        //Interaction24
+        //When RadioButton_1_6 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 3 , 1);
+    }
+    if (&src == &RadioButton_1_7)
+    {
+        //Interaction25
+        //When RadioButton_1_7 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 3 , 2);
+    }
+    if (&src == &RadioButton_1_8)
+    {
+        //Interaction26
+        //When RadioButton_1_8 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 3 , 3);
+    }
+    if (&src == &RadioButton_1_9)
+    {
+        //Interaction27
+        //When RadioButton_1_9 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 2 , 0);
+    }
+    if (&src == &RadioButton_1_10)
+    {
+        //Interaction28
+        //When RadioButton_1_10 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 2 , 1);
+    }
+    if (&src == &RadioButton_1_11)
+    {
+        //Interaction29
+        //When RadioButton_1_11 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 2 , 2);
+    }
+    if (&src == &RadioButton_1_12)
+    {
+        //Interaction30
+        //When RadioButton_1_12 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 2 , 3);
+    }
+    if (&src == &RadioButton_1_13)
+    {
+        //Interaction31
+        //When RadioButton_1_13 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 1 , 0);
+    }
+    if (&src == &RadioButton_1_14)
+    {
+        //Interaction32
+        //When RadioButton_1_14 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 1 , 1);
+    }
+    if (&src == &RadioButton_1_15)
+    {
+        //Interaction33
+        //When RadioButton_1_15 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 1 , 2);
+    }
+    if (&src == &RadioButton_1_16)
+    {
+        //Interaction34
+        //When RadioButton_1_16 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(1, 1 , 3);
+    }
+    if (&src == &RadioButton_2_1)
+    {
+        //Interaction35
+        //When RadioButton_2_1 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 4 , 0);
+    }
+    if (&src == &RadioButton_2_2)
+    {
+        //Interaction36
+        //When RadioButton_2_2 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 4 , 1);
+    }
+    if (&src == &RadioButton_2_3)
+    {
+        //Interaction37
+        //When RadioButton_2_3 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 4 , 2);
+    }
+    if (&src == &RadioButton_2_4)
+    {
+        //Interaction38
+        //When RadioButton_2_4 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 4 , 3);
+    }
+    if (&src == &RadioButton_2_5)
+    {
+        //Interaction39
+        //When RadioButton_2_5 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 3 , 0);
+    }
+    if (&src == &RadioButton_2_6)
+    {
+        //Interaction40
+        //When RadioButton_2_6 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 3 , 1);
+    }
+    if (&src == &RadioButton_2_7)
+    {
+        //Interaction41
+        //When RadioButton_2_7 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 3 , 2);
+    }
+    if (&src == &RadioButton_2_8)
+    {
+        //Interaction42
+        //When RadioButton_2_8 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 3 , 3);
+    }
+    if (&src == &RadioButton_2_9)
+    {
+        //Interaction43
+        //When RadioButton_2_9 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 2 , 0);
+    }
+    if (&src == &RadioButton_2_10)
+    {
+        //Interaction44
+        //When RadioButton_2_10 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 2 , 1);
+    }
+    if (&src == &RadioButton_2_11)
+    {
+        //Interaction45
+        //When RadioButton_2_11 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 2 , 2);
+    }
+    if (&src == &RadioButton_2_12)
+    {
+        //Interaction46
+        //When RadioButton_2_12 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 2 , 3);
+    }
+    if (&src == &RadioButton_2_13)
+    {
+        //Interaction47
+        //When RadioButton_2_13 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 1 , 0);
+    }
+    if (&src == &RadioButton_2_14)
+    {
+        //Interaction48
+        //When RadioButton_2_14 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 1 , 1);
+    }
+    if (&src == &RadioButton_2_15)
+    {
+        //Interaction49
+        //When RadioButton_2_15 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 1 , 2);
+    }
+    if (&src == &RadioButton_2_16)
+    {
+        //Interaction50
+        //When RadioButton_2_16 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(2, 1 , 3);
+    }
+    if (&src == &RadioButton_3_1)
+    {
+        //Interaction51
+        //When RadioButton_3_1 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 4 , 0);
+    }
+    if (&src == &RadioButton_3_2)
+    {
+        //Interaction52
+        //When RadioButton_3_2 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 4 , 1);
+    }
+    if (&src == &RadioButton_3_3)
+    {
+        //Interaction53
+        //When RadioButton_3_3 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 4 , 2);
+    }
+    if (&src == &RadioButton_3_4)
+    {
+        //Interaction54
+        //When RadioButton_3_4 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 4 , 3);
+    }
+    if (&src == &RadioButton_3_5)
+    {
+        //Interaction55
+        //When RadioButton_3_5 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 3 , 0);
+    }
+    if (&src == &RadioButton_3_6)
+    {
+        //Interaction56
+        //When RadioButton_3_6 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 3 , 1);
+    }
+    if (&src == &RadioButton_3_7)
+    {
+        //Interaction57
+        //When RadioButton_3_7 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 3 , 2);
+    }
+    if (&src == &RadioButton_3_8)
+    {
+        //Interaction58
+        //When RadioButton_3_8 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 3 , 3);
+    }
+    if (&src == &RadioButton_3_9)
+    {
+        //Interaction59
+        //When RadioButton_3_9 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 2 , 0);
+    }
+    if (&src == &RadioButton_3_10)
+    {
+        //Interaction60
+        //When RadioButton_3_10 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 2 , 1);
+    }
+    if (&src == &RadioButton_3_11)
+    {
+        //Interaction61
+        //When RadioButton_3_11 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 2 , 2);
+    }
+    if (&src == &RadioButton_3_12)
+    {
+        //Interaction62
+        //When RadioButton_3_12 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 2 , 3);
+    }
+    if (&src == &RadioButton_3_13)
+    {
+        //Interaction63
+        //When RadioButton_3_13 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 1 , 0);
+    }
+    if (&src == &RadioButton_3_14)
+    {
+        //Interaction64
+        //When RadioButton_3_14 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 1 , 1);
+    }
+    if (&src == &RadioButton_3_15)
+    {
+        //Interaction65
+        //When RadioButton_3_15 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 1 , 2);
+    }
+    if (&src == &RadioButton_3_16)
+    {
+        //Interaction66
+        //When RadioButton_3_16 selected execute C++ code
+        //Execute C++ code
+        presenter->selectMatrizLed(3, 1 , 3);
     }
 }

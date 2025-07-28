@@ -52,23 +52,49 @@ void MatrizLedSelect(uint8_t num_mx, uint8_t row, uint8_t column){
 		return;
 	}
 	//primero completo los datos de las filas
+	uint8_t current_row = row * 2 - 1;
+
 	for (uint8_t matriz = 0 ; matriz < NUM_MATRICES; matriz++){
 		for(uint8_t fila = 0; fila < NUM_FILAS ; fila++){
-			if(fila == 0){
-				matrix_pattern[matriz][fila] = 0xFF;
-			}else{
+
+			if(matriz != num_mx){
 				matrix_pattern[matriz][fila] = 0x00;
+			} else {
+				if( (fila == current_row) || (fila == (current_row-1))){
+					switch (column) {
+					    case 0:
+					    	matrix_pattern[matriz][fila] = 0b00000011;
+					        break; // Optional: exits the switch statement
+					    case 1:
+					    	matrix_pattern[matriz][fila] = 0b00001100;
+					        break;
+					    case 2:
+					    	matrix_pattern[matriz][fila] = 0b00110000;
+					        break;
+					    case 3:
+					    	matrix_pattern[matriz][fila] = 0b11000000;
+					        // Code to execute if expression matches constant_value_2
+					        break;
+
+					    default:
+					    	matrix_pattern[matriz][fila] = 0x00;
+					}
+				} else {
+					matrix_pattern[matriz][fila] = 0x00;
+				}
 			}
 		}
 	}
+	// ya actualiza toda la matriz
 	uint8_t spi_packet[NUM_MATRICES * 2];
+	uint8_t posicion_spi = 0;
 	for(uint8_t fila = 1; fila <= NUM_FILAS ; fila++){
 
         for(uint8_t matriz = 0; matriz < NUM_MATRICES; matriz++){
             // El orden de envío es de la última matriz a la primera
-            //uint8_t posicion_spi = NUM_MATRICES - 1 - matriz;
-        	spi_packet[matriz * 2] = fila;
-        	spi_packet[matriz*2 + 1] = matrix_pattern[matriz][fila-1];
+        	posicion_spi = (NUM_MATRICES - 1 - matriz) * 2;
+        	spi_packet[posicion_spi] = fila;
+        	spi_packet[posicion_spi + 1] = matrix_pattern[matriz][fila-1];
         }
 
 		MAX7219_CS_Enable();
@@ -100,6 +126,8 @@ void MAX7219_ClearAll(void) {
         MAX7219_CS_Disable();
     }
 }
+
+
 HAL_StatusTypeDef MAX7219_SendToAll(uint8_t address, uint8_t data, uint8_t pos) {
     uint8_t tx[NUM_MATRICES * 2];
 
