@@ -61,9 +61,11 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../../CM7/../../CM7/TouchGFX/gui/include/gui/model/ModelListener.hpp \
  ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp \
  ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
+ ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
  ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
  ../../CM7/../../CM7/TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp \
  ../../CM7/../../CM7/TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp \
  ../../CM7/../../CM7/TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp \
@@ -128,7 +130,6 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
  F:/trabajo_final/interface/interfaz/STM32CubeIDE/CM7/Application/User/Core/led_matrix_control.h \
  ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp \
  ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp \
- ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp \
  ../../CM7/../../CM7/TouchGFX/gui/include/gui/waitingscreen_screen/WaitingScreenView.hpp \
  ../../CM7/../../CM7/TouchGFX/generated/gui_generated/include/gui_generated/waitingscreen_screen/WaitingScreenViewBase.hpp \
  ../../CM7/../../CM7/TouchGFX/gui/include/gui/waitingscreen_screen/WaitingScreenPresenter.hpp \
@@ -216,9 +217,11 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../../CM7/../../CM7/TouchGFX/gui/include/gui/model/ModelListener.hpp:
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Box.hpp:
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
 ../../CM7/../../CM7/TouchGFX/gui/include/gui/screen2_screen/Screen2View.hpp:
 ../../CM7/../../CM7/TouchGFX/generated/gui_generated/include/gui_generated/screen2_screen/Screen2ViewBase.hpp:
 ../../CM7/../../CM7/TouchGFX/gui/include/gui/screen2_screen/Screen2Presenter.hpp:
@@ -283,7 +286,6 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 F:/trabajo_final/interface/interfaz/STM32CubeIDE/CM7/Application/User/Core/led_matrix_control.h:
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButton.hpp:
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/RadioButtonGroup.hpp:
-../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/ButtonWithLabel.hpp:
 ../../CM7/../../CM7/TouchGFX/gui/include/gui/waitingscreen_screen/WaitingScreenView.hpp:
 ../../CM7/../../CM7/TouchGFX/generated/gui_generated/include/gui_generated/waitingscreen_screen/WaitingScreenViewBase.hpp:
 ../../CM7/../../CM7/TouchGFX/gui/include/gui/waitingscreen_screen/WaitingScreenPresenter.hpp:

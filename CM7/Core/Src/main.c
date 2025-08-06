@@ -202,10 +202,13 @@ Error_Handler();
   MAX7219_ResetAll();  // Inicializa todas las matrices
   HAL_Delay(50);
 
-  HAL_Delay(2000);
-
+  HAL_Delay(500);
+  //MAX7219_Init();
   MAX7219_ClearAll();
-
+  HAL_Delay(500);
+  MAX7219_ResetAll();
+  HAL_Delay(500);
+  MAX7219_ClearAll();
   /* USER CODE END 2 */
 
   /* Init scheduler */

@@ -9,8 +9,10 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -38,10 +40,20 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image image1;
+    touchgfx::ButtonWithLabel inc;
     touchgfx::Image image2_1;
     touchgfx::Image image2;
     touchgfx::Button button1;
     touchgfx::TextArea textArea1;
+    touchgfx::Box box1;
+    touchgfx::TextAreaWithOneWildcard textArea2;
+    touchgfx::ButtonWithLabel dec;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t TEXTAREA2_SIZE = 24;
+    touchgfx::Unicode::UnicodeChar textArea2Buffer[TEXTAREA2_SIZE];
 
 private:
 

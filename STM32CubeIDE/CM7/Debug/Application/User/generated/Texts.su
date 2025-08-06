@@ -15,6 +15,6 @@ F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/texts/src/Texts.cpp:2
 F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/texts/src/Texts.cpp:31:32:touchgfx::Unicode::UnicodeChar touchgfx::TextProvider::getNextLigature(touchgfx::TextDirection)	8	static
 F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/texts/src/Texts.cpp:45:6:void touchgfx::TextProvider::initializeInternal()	0	static
 F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/texts/src/Texts.cpp:50:6:)	32	static
-F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/texts/src/Texts.cpp:88:6:static void touchgfx::Texts::setLanguage(touchgfx::LanguageId)	16	static
-F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/texts/src/Texts.cpp:118:6:static void touchgfx::Texts::setTranslation(touchgfx::LanguageId, const void*)	0	static
-F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/texts/src/Texts.cpp:123:39:const touchgfx::Unicode::UnicodeChar* touchgfx::Texts::getText(touchgfx::TypedTextId) const	0	static
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/texts/src/Texts.cpp:93:6:static void touchgfx::Texts::setLanguage(touchgfx::LanguageId)	16	static
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/texts/src/Texts.cpp:123:6:static void touchgfx::Texts::setTranslation(touchgfx::LanguageId, const void*)	0	static
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/texts/src/Texts.cpp:128:39:const touchgfx::Unicode::UnicodeChar* touchgfx::Texts::getText(touchgfx::TypedTextId) const	0	static

@@ -26,7 +26,7 @@ public:
     virtual void deactivate();
 
     virtual ~Screen1Presenter() {}
-
+    void updateBrilloValue(int value);
 private:
     Screen1Presenter();
 

@@ -7,10 +7,16 @@
 #include "led_matrix_control.h"
 
 // TODO: buscar no hacerlas globalas, pasarlas como parametros.
-// Variables //
+// Variables globales //
 uint8_t current_matrix = 0;
 uint8_t current_row = 1;   // de 1 a 8
 uint8_t current_bit = 0;
+uint8_t matrix_pattern[NUM_MATRICES][NUM_FILAS] = {0};
+// Functions
+void MAX7219_Init(void);
+void MAX7219_Test_Brightness(void);
+void MatrizLedSelect(uint8_t num_mx, uint8_t row, uint8_t column);
+void MAX7219_UpdateMatrix(uint8_t matrix_update[NUM_MATRICES][NUM_FILAS]);
 void MAX7219_ClearAll(void);
 void MAX7219_ResetAll(void);
 void MAX7219_LightSingleLed(uint8_t matrix_index, uint8_t row, uint8_t bit_position);
@@ -21,6 +27,35 @@ void MAX7219_CS_Enable(void) {
 
 void MAX7219_CS_Disable(void) {
     HAL_GPIO_WritePin(MAX7219_CS_GPIO_Port, MAX7219_CS_Pin, GPIO_PIN_SET);
+}
+void MAX7219_Init(void){
+    uint8_t config_brightness[NUM_MATRICES * 2];
+    MAX7219_Test_Brightness();
+    for(uint8_t test = 0; test <= 15 ; test++){
+        for (int i = 0; i < NUM_MATRICES; i++) {
+        	config_brightness[i * 2]     = INTENSITY_ADD; // Dirección del registro Shutdown
+        	config_brightness[i * 2 + 1] = test; // 0x01 = encendido
+        }
+    	MAX7219_CS_Enable();
+    	HAL_SPI_Transmit(&hspi5, config_brightness, sizeof(config_brightness), 100);
+    	MAX7219_CS_Disable();
+    	HAL_Delay(2000);
+    }
+
+
+
+}
+void MAX7219_Test_Brightness(void){
+
+	uint8_t pattern[NUM_MATRICES * 2];
+
+	for(uint8_t i = 0; i < NUM_MATRICES ; i++){
+		pattern[i * 2]     = 0x04; // fila del medio
+		pattern[i * 2 + 1] = 0xFF; // todos los leds
+	}
+	MAX7219_CS_Enable();
+	HAL_SPI_Transmit(&hspi5, pattern, sizeof(pattern), 100);
+	MAX7219_CS_Disable();
 }
 
 void MAX7219_BlinkTest(void) {
@@ -41,12 +76,11 @@ void MAX7219_BlinkTest(void) {
 //{ 5  , 6  , 7  , 8  }
 //{ 9  , 10 , 11 , 12 }
 //{ 13 , 14 , 15 , 16 }
-uint8_t matrix_pattern[NUM_MATRICES][NUM_FILAS] = {0};
-// Funciona
+
+
+
 void MatrizLedSelect(uint8_t num_mx, uint8_t row, uint8_t column){
 	// arreglo para darle valores a las matrices
-
-
 	if(num_mx >= NUM_MATRICES || row >= NUM_FILAS || column >= 8){
 		// evitar valores erroneos
 		return;
@@ -75,7 +109,6 @@ void MatrizLedSelect(uint8_t num_mx, uint8_t row, uint8_t column){
 					    	matrix_pattern[matriz][fila] = 0b11000000;
 					        // Code to execute if expression matches constant_value_2
 					        break;
-
 					    default:
 					    	matrix_pattern[matriz][fila] = 0x00;
 					}
@@ -85,24 +118,25 @@ void MatrizLedSelect(uint8_t num_mx, uint8_t row, uint8_t column){
 			}
 		}
 	}
-	// ya actualiza toda la matriz
+	MAX7219_UpdateMatrix(matrix_pattern);
+}
+
+void MAX7219_UpdateMatrix(uint8_t matrix_update[NUM_MATRICES][NUM_FILAS]){
+
 	uint8_t spi_packet[NUM_MATRICES * 2];
 	uint8_t posicion_spi = 0;
 	for(uint8_t fila = 1; fila <= NUM_FILAS ; fila++){
-
         for(uint8_t matriz = 0; matriz < NUM_MATRICES; matriz++){
-            // El orden de envío es de la última matriz a la primera
-        	posicion_spi = (NUM_MATRICES - 1 - matriz) * 2;
+            posicion_spi = (NUM_MATRICES - 1 - matriz) * 2;
         	spi_packet[posicion_spi] = fila;
         	spi_packet[posicion_spi + 1] = matrix_pattern[matriz][fila-1];
         }
-
 		MAX7219_CS_Enable();
 		HAL_SPI_Transmit(&hspi5, spi_packet, sizeof(spi_packet), 100);
 		MAX7219_CS_Disable();
 	}
-
 }
+
 
 
 
@@ -111,16 +145,10 @@ void MAX7219_ClearAll(void) {
     for (uint8_t fila = 1; fila <= 8; fila++) {
         uint8_t tx[NUM_MATRICES * 2];
 
-        // IMPORTANTE: llenar el buffer en orden inverso,
-        // porque el primer par enviado es para la matriz más lejana,
-        // y el último par es para la matriz más cercana al micro.
         for (int i = 0; i < NUM_MATRICES; i++) {
-            //int index = (NUM_MATRICES - 1) - i;  // índice invertido
-
-            tx[i * 2]     = fila;   // Dirección fila (1 a 8)
-            tx[i * 2 + 1] = 0x00;   // Apagar todos los LEDs en esa fila
+            tx[i * 2]     = fila;
+            tx[i * 2 + 1] = 0x00;
         }
-
         MAX7219_CS_Enable();
         HAL_SPI_Transmit(&hspi5, tx, sizeof(tx), 500);
         MAX7219_CS_Disable();

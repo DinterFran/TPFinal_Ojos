@@ -13,9 +13,17 @@ Screen1ViewBase::Screen1ViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    image1.setXY(-88, -35);
+    image1.setXY(-103, -45);
     image1.setBitmap(touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_BACKGROUNDS_1024X600_METEOR_RAIN_ID));
     add(image1);
+
+    inc.setXY(604, 230);
+    inc.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUNDED_ACTION_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUNDED_ACTION_ID));
+    inc.setLabelText(touchgfx::TypedText(T_INC_BRILLO));
+    inc.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inc.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    inc.setAction(buttonCallback);
+    add(inc);
 
     image2_1.setXY(0, 0);
     image2_1.setBitmap(touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_BARS_800X480_BOTTOM_BASE_ID));
@@ -35,6 +43,27 @@ Screen1ViewBase::Screen1ViewBase() :
     textArea1.setLinespacing(0);
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_6YQL));
     add(textArea1);
+
+    box1.setPosition(334, 230, 149, 50);
+    box1.setColor(touchgfx::Color::getColorFromRGB(145, 177, 191));
+    add(box1);
+
+    textArea2.setXY(363, 245);
+    textArea2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
+    textArea2.setLinespacing(0);
+    Unicode::snprintf(textArea2Buffer, TEXTAREA2_SIZE, "%s", touchgfx::TypedText(T_NUM_BRILLO).getText());
+    textArea2.setWildcard(textArea2Buffer);
+    textArea2.resizeToCurrentText();
+    textArea2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_BP1Y));
+    add(textArea2);
+
+    dec.setXY(113, 230);
+    dec.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUNDED_ACTION_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUNDED_ACTION_ID));
+    dec.setLabelText(touchgfx::TypedText(T_DEC_BRILLO));
+    dec.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    dec.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    dec.setAction(buttonCallback);
+    add(dec);
 }
 
 Screen1ViewBase::~Screen1ViewBase()
@@ -55,5 +84,19 @@ void Screen1ViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
         //When button1 clicked change screen to Screen2
         //Go to Screen2 with screen transition towards East
         application().gotoScreen2ScreenSlideTransitionEast();
+    }
+    if (&src == &inc)
+    {
+        //Interaction2
+        //When inc clicked execute C++ code
+        //Execute C++ code
+        presenter->updateBrilloValue(1);
+    }
+    if (&src == &dec)
+    {
+        //Interaction3
+        //When dec clicked execute C++ code
+        //Execute C++ code
+        presenter->updateBrilloValue(0);
     }
 }

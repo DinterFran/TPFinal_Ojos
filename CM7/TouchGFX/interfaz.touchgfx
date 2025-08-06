@@ -7,11 +7,33 @@
           {
             "Type": "Image",
             "Name": "image1",
-            "X": -88,
-            "Y": -35,
+            "X": -103,
+            "Y": -45,
             "Width": 1024,
             "Height": 600,
             "RelativeFilename": "__generated\\clay_theme_images_backgrounds_1024x600_meteor_rain.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "inc",
+            "X": 604,
+            "Y": 230,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_action.png",
+            "TextId": "Inc_brillo",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           },
           {
             "Type": "Image",
@@ -54,6 +76,57 @@
               "Blue": 255
             },
             "AutoSize": true
+          },
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "X": 334,
+            "Y": 230,
+            "Width": 149,
+            "Height": 50,
+            "Color": {
+              "Red": 145,
+              "Green": 177,
+              "Blue": 191
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea2",
+            "X": 363,
+            "Y": 245,
+            "Width": 72,
+            "Height": 20,
+            "TextId": "__SingleUse_BP1Y",
+            "TextRotation": "0",
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "num_brillo",
+              "UseBuffer": true,
+              "BufferSize": 24
+            }
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "dec",
+            "X": 113,
+            "Y": 230,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_rounded_action.png",
+            "TextId": "dec_brillo",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           }
         ],
         "Interactions": [
@@ -68,6 +141,30 @@
               "ScreenTransitionType": "ScreenTransitionSlide",
               "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen2"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "inc"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "#include <gui/screen1_screen/Screen1Presenter.hpp>",
+              "Code": "presenter->updateBrilloValue(1);"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "dec"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "#include <gui/screen1_screen/Screen1Presenter.hpp>",
+              "Code": "presenter->updateBrilloValue(0);"
             }
           }
         ],

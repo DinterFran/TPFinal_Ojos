@@ -1,5 +1,5 @@
-F:/trabajo_final/interface/interfaz/CM7/Core/Src/main.c:860:13:TouchGFX_Task	8	static
-F:/trabajo_final/interface/interfaz/CM7/Core/Src/main.c:265:6:SystemClock_Config	136	static,ignoring_inline_asm
+F:/trabajo_final/interface/interfaz/CM7/Core/Src/main.c:863:13:TouchGFX_Task	8	static
+F:/trabajo_final/interface/interfaz/CM7/Core/Src/main.c:268:6:SystemClock_Config	136	static,ignoring_inline_asm
 F:/trabajo_final/interface/interfaz/CM7/Core/Src/main.c:120:5:main	280	static,ignoring_inline_asm
-F:/trabajo_final/interface/interfaz/CM7/Core/Src/main.c:950:6:HAL_TIM_PeriodElapsedCallback	0	static
-F:/trabajo_final/interface/interfaz/CM7/Core/Src/main.c:967:6:Error_Handler	0	static,ignoring_inline_asm
+F:/trabajo_final/interface/interfaz/CM7/Core/Src/main.c:953:6:HAL_TIM_PeriodElapsedCallback	0	static
+F:/trabajo_final/interface/interfaz/CM7/Core/Src/main.c:970:6:Error_Handler	0	static,ignoring_inline_asm

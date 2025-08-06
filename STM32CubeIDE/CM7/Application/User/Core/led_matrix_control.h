@@ -11,12 +11,16 @@
 #include "main.h"
 #include "stm32h747i_discovery_qspi.h"
 
-#define  NUM_FILAS 				8
+#define  NUM_FILAS 					8
 #define  NUM_MATRICES				4
+#define  MAX_BRIGTHNESS				15
+#define  INTENSITY_ADD				0x0A
 
 
 // Led Matrix functions
 HAL_StatusTypeDef MAX7219_SendToAll(uint8_t address, uint8_t data, uint8_t pos);
+void MAX7219_Test_Brightness(void);
+void MAX7219_Init(void);
 void MatrizLedSelect(uint8_t num_mx, uint8_t row, uint8_t column);
 void MAX7219_ResetAll(void);
 void MAX7219_ClearAll(void);
