@@ -7,13 +7,22 @@
 #include "led_matrix_control.h"
 
 // TODO: buscar no hacerlas globalas, pasarlas como parametros.
+// TODO: mejorar lo nombres se las funciones para que sean coherentes con lo que hacen
 // Variables globales //
+
+
 uint8_t current_matrix = 0;
 uint8_t current_row = 1;   // de 1 a 8
 uint8_t current_bit = 0;
 uint8_t matrix_pattern[NUM_MATRICES][NUM_FILAS] = {0};
+SeleccionLED saved_in_data[MAX_SELECTIONS];
+uint8_t in_data_count = 0;
+
+
 // Functions
-void MAX7219_Init(void);
+void MAX7219_SaveSelection(uint8_t num_mx, uint8_t row, uint8_t column);
+void MAX7219_Init(int brillo);
+void MAX7219_ShowSelecctions(void);
 void MAX7219_Test_Brightness(void);
 void MatrizLedSelect(uint8_t num_mx, uint8_t row, uint8_t column);
 void MAX7219_UpdateMatrix(uint8_t matrix_update[NUM_MATRICES][NUM_FILAS]);
@@ -28,22 +37,37 @@ void MAX7219_CS_Enable(void) {
 void MAX7219_CS_Disable(void) {
     HAL_GPIO_WritePin(MAX7219_CS_GPIO_Port, MAX7219_CS_Pin, GPIO_PIN_SET);
 }
-void MAX7219_Init(void){
+void MAX7219_Init(int brillo){
     uint8_t config_brightness[NUM_MATRICES * 2];
-    MAX7219_Test_Brightness();
-    for(uint8_t test = 0; test <= 15 ; test++){
-        for (int i = 0; i < NUM_MATRICES; i++) {
-        	config_brightness[i * 2]     = INTENSITY_ADD; // Dirección del registro Shutdown
-        	config_brightness[i * 2 + 1] = test; // 0x01 = encendido
-        }
-    	MAX7219_CS_Enable();
-    	HAL_SPI_Transmit(&hspi5, config_brightness, sizeof(config_brightness), 100);
-    	MAX7219_CS_Disable();
-    	HAL_Delay(2000);
-    }
 
 
+	for (int i = 0; i < NUM_MATRICES; i++) {
+		config_brightness[i * 2]     = INTENSITY_ADD; // Dirección del registro Shutdown
+		config_brightness[i * 2 + 1] = brillo; // 0x01 = encendido
+	}
+	MAX7219_CS_Enable();
+	HAL_SPI_Transmit(&hspi5, config_brightness, sizeof(config_brightness), 100);
+	MAX7219_CS_Disable();
+	MAX7219_Test_Brightness();
 
+}
+void MAX7219_SaveSelection(uint8_t num_mx, uint8_t row, uint8_t column){
+	if(in_data_count < MAX_SELECTIONS){
+		saved_in_data[in_data_count].n_matrix = num_mx;
+		saved_in_data[in_data_count].n_row = row;
+		saved_in_data[in_data_count].n_column = column;
+		in_data_count++;
+	}
+}
+void MAX7219_ShowSelecctions(void){
+
+	for(uint8_t i = 0; i < in_data_count ; i++ ){
+		MatrizLedSelect(saved_in_data[i].n_matrix,
+						saved_in_data[i].n_row,
+						saved_in_data[i].n_column);
+		HAL_Delay(TIME_DELAY_SHOW_LED);
+	}
+	MAX7219_ClearAll();
 }
 void MAX7219_Test_Brightness(void){
 
@@ -58,18 +82,7 @@ void MAX7219_Test_Brightness(void){
 	MAX7219_CS_Disable();
 }
 
-void MAX7219_BlinkTest(void) {
-    for (uint8_t m = 0; m < NUM_MATRICES; m++) {
-        for (uint8_t fila = 1; fila <= 8; fila++) {
-            for (uint8_t bit = 0; bit < 8; bit++) {
-                uint8_t valor = 1 << bit;
-                MAX7219_SendToAll(fila, valor, m);
-                HAL_Delay(100);
-                MAX7219_SendToAll(fila, 0x00, m);
-            }
-        }
-    }
-}
+
 
 //Forma de matriz:
 //{ 1  , 2 	, 3  , 4  }
@@ -170,9 +183,9 @@ HAL_StatusTypeDef MAX7219_SendToAll(uint8_t address, uint8_t data, uint8_t pos) 
     }
 
     MAX7219_CS_Enable();
-    HAL_Delay(1);
+    HAL_Delay(100);
     HAL_StatusTypeDef ret = HAL_SPI_Transmit(&hspi5, tx, NUM_MATRICES * 2, 100);
-    HAL_Delay(1);
+    HAL_Delay(100);
     MAX7219_CS_Disable();
 
     return ret;

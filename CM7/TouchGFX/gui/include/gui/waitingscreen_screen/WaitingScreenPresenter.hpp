@@ -3,6 +3,7 @@
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
+#include "main.h"
 
 using namespace touchgfx;
 
@@ -26,7 +27,7 @@ public:
     virtual void deactivate();
 
     virtual ~WaitingScreenPresenter() {}
-
+    void Start_Pattern();
 private:
     WaitingScreenPresenter();
 

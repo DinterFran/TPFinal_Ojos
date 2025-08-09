@@ -3,7 +3,7 @@
 
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
-
+#include "main.h"
 using namespace touchgfx;
 
 class Screen1View;

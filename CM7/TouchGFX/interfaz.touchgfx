@@ -93,9 +93,9 @@
           {
             "Type": "TextArea",
             "Name": "textArea2",
-            "X": 363,
+            "X": 350,
             "Y": 245,
-            "Width": 72,
+            "Width": 107,
             "Height": 20,
             "TextId": "__SingleUse_BP1Y",
             "TextRotation": "0",
@@ -1978,8 +1978,30 @@
             "RelativeFilename": "__generated\\clay_theme_images_bars_800x480_bottom_base.png"
           },
           {
+            "Type": "ButtonWithLabel",
+            "Name": "button_back",
+            "X": 65,
+            "Y": 415,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "TextId": "__SingleUse_1ECI",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
             "Type": "Button",
-            "Name": "button1",
+            "Name": "button_start",
             "X": 268,
             "Y": 400,
             "Width": 264,
@@ -1993,7 +2015,7 @@
             "Name": "textArea1",
             "X": 377,
             "Y": 430,
-            "Width": 47,
+            "Width": 51,
             "Height": 20,
             "TextId": "__SingleUse_ZVLI",
             "TextRotation": "0",
@@ -2021,6 +2043,28 @@
             "IndicatorPositionHeight": 10,
             "ProgressRangeMax": 100,
             "ProgressInitialValue": 60
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_next",
+            "X": 615,
+            "Y": 415,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "TextId": "__SingleUse_GMPK",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
           }
         ],
         "Interactions": [
@@ -2028,13 +2072,25 @@
             "InteractionName": "Interaction1",
             "Trigger": {
               "Type": "TriggerClicked",
-              "TriggerComponent": "button1"
+              "TriggerComponent": "button_back"
             },
             "Action": {
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionSlide",
               "ScreenTransitionDirection": "East",
               "ActionComponent": "Screen2"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_start"
+            },
+            "Action": {
+              "Type": "ActionExecuteCode",
+              "Includes": "\r\n#include <gui/waitingscreen_screen/WaitingScreenPresenter.hpp>",
+              "Code": "presenter->Start_Pattern();"
             }
           }
         ],

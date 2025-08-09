@@ -13,6 +13,12 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_1ECI" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
+      <Text Id="__SingleUse_GMPK" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Next</Translation>
+      </Text>
       <Text Id="Inc_brillo" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">INC</Translation>
       </Text>
@@ -23,10 +29,10 @@
         <Translation Language="GB">7</Translation>
       </Text>
       <Text Id="__SingleUse_BP1Y" Alignment="Center" TypographyId="Default">
-        <Translation Language="GB">Brillo:&lt;123&gt;</Translation>
+        <Translation Language="GB"> Brillo:&lt;123&gt;    </Translation>
       </Text>
       <Text Id="__SingleUse_ZVLI" Alignment="Left" TypographyId="Default">
-        <Translation Language="GB">Next</Translation>
+        <Translation Language="GB">Start</Translation>
       </Text>
       <Text Id="__SingleUse_6YQL" Alignment="Left" TypographyId="Default">
         <Translation Language="GB">Next</Translation>

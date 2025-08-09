@@ -25,10 +25,18 @@ WaitingScreenViewBase::WaitingScreenViewBase() :
     image2.setBitmap(touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_BARS_800X480_BOTTOM_BASE_ID));
     add(image2);
 
-    button1.setXY(268, 400);
-    button1.setBitmaps(touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_MEDIUM_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_MEDIUM_ROUND_DISABLED_ID));
-    button1.setAction(buttonCallback);
-    add(button1);
+    button_back.setXY(65, 415);
+    button_back.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUND_ACTION_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUND_ACTION_ID));
+    button_back.setLabelText(touchgfx::TypedText(T___SINGLEUSE_1ECI));
+    button_back.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    button_back.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    button_back.setAction(buttonCallback);
+    add(button_back);
+
+    button_start.setXY(268, 400);
+    button_start.setBitmaps(touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_MEDIUM_ROUND_DISABLED_ID), touchgfx::Bitmap(BITMAP_CLAY_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_36_MEDIUM_ROUND_DISABLED_ID));
+    button_start.setAction(buttonCallback);
+    add(button_start);
 
     textArea1.setXY(377, 430);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
@@ -44,6 +52,13 @@ WaitingScreenViewBase::WaitingScreenViewBase() :
     boxProgress1.setColor(touchgfx::Color::getColorFromRGB(0, 240, 255));
     boxProgress1.setValue(60);
     add(boxProgress1);
+
+    button_next.setXY(615, 415);
+    button_next.setBitmaps(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUND_ACTION_ID), touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BUTTON_REGULAR_HEIGHT_50_TINY_ROUND_ACTION_ID));
+    button_next.setLabelText(touchgfx::TypedText(T___SINGLEUSE_GMPK));
+    button_next.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    button_next.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    add(button_next);
 }
 
 WaitingScreenViewBase::~WaitingScreenViewBase()
@@ -58,11 +73,18 @@ void WaitingScreenViewBase::setupScreen()
 
 void WaitingScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
 {
-    if (&src == &button1)
+    if (&src == &button_back)
     {
         //Interaction1
-        //When button1 clicked change screen to Screen2
+        //When button_back clicked change screen to Screen2
         //Go to Screen2 with screen transition towards East
         application().gotoScreen2ScreenSlideTransitionEast();
+    }
+    if (&src == &button_start)
+    {
+        //Interaction2
+        //When button_start clicked execute C++ code
+        //Execute C++ code
+        presenter->Start_Pattern();
     }
 }

@@ -23,8 +23,8 @@ void Screen2Presenter:: selectMatrizLed(int matriz, int row, int column)
 	uint8_t num_mx = (uint8_t)matriz;
 	uint8_t fila = (uint8_t)row;
 	uint8_t columna = (uint8_t)column;
-	//MatrizLedSelect(num_mx, fila, columna);
-    // Avanzamos una posición por cada toque
+	//Guardo la seleccion que me llega para reproducir de forma continua
+	MAX7219_SaveSelection(num_mx , fila, columna);
 
     // Apagar todo primero
     MAX7219_ClearAll();

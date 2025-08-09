@@ -48,7 +48,7 @@ Screen1ViewBase::Screen1ViewBase() :
     box1.setColor(touchgfx::Color::getColorFromRGB(145, 177, 191));
     add(box1);
 
-    textArea2.setXY(363, 245);
+    textArea2.setXY(350, 245);
     textArea2.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     textArea2.setLinespacing(0);
     Unicode::snprintf(textArea2Buffer, TEXTAREA2_SIZE, "%s", touchgfx::TypedText(T_NUM_BRILLO).getText());

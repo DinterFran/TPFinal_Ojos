@@ -16,3 +16,6 @@ void WaitingScreenPresenter::deactivate()
 {
 
 }
+void WaitingScreenPresenter::Start_Pattern(){
+	MAX7219_ShowSelecctions();
+}

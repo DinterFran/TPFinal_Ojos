@@ -17,8 +17,9 @@ void Screen1View::tearDownScreen()
 }
 void Screen1View::sendBrilloValue(int valor)
 {
-	int test = valor;
-	Unicode::snprintf(textArea2Buffer, TEXTAREA2_SIZE, "%d", test);
+
+	Unicode::snprintf(textArea2Buffer, TEXTAREA2_SIZE, "%d", valor);
 	textArea2.setWildcard(textArea2Buffer);
     textArea2.invalidate();
+
 }

@@ -9,6 +9,7 @@
 #include <gui/waitingscreen_screen/WaitingScreenPresenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
+#include <touchgfx/widgets/ButtonWithLabel.hpp>
 #include <touchgfx/widgets/Button.hpp>
 #include <touchgfx/widgets/TextArea.hpp>
 #include <touchgfx/containers/progress_indicators/BoxProgress.hpp>
@@ -41,9 +42,11 @@ protected:
     touchgfx::Image image1;
     touchgfx::Image image2_1;
     touchgfx::Image image2;
-    touchgfx::Button button1;
+    touchgfx::ButtonWithLabel button_back;
+    touchgfx::Button button_start;
     touchgfx::TextArea textArea1;
     touchgfx::BoxProgress boxProgress1;
+    touchgfx::ButtonWithLabel button_next;
 
 private:
 
