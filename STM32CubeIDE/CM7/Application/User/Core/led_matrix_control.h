@@ -38,11 +38,12 @@ void MAX7219_CS_Enable(void);
 void MAX7219_CS_Disable(void);
 void MAX7219_LightSingleLed(uint8_t matrix_index, uint8_t row, uint8_t bit_position);
 void MAX7219_SaveSelection(uint8_t num_mx, uint8_t row, uint8_t column);
-void MAX7219_ShowSelecctions(void);
+void MAX7219_ShowSelecctions(uint8_t index);
 
 // Varibles externas
 
 extern uint8_t current_matrix;
 extern uint8_t current_row;   // de 1 a 8
 extern uint8_t current_bit;
+extern uint8_t in_data_count;
 #endif /* APPLICATION_USER_CORE_LED_MATRIX_CONTROL_H_ */

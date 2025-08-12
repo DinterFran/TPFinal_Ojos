@@ -23,11 +23,17 @@
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:154:18:void touchgfx::SlideTransition<templateDirection>::init() [with touchgfx::Direction templateDirection = touchgfx::EAST]	3
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:59:18:virtual void touchgfx::MVPApplication::handlePendingScreenTransition()	3
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:87:18:void touchgfx::SlideTransition<templateDirection>::handleTickEvent() [with touchgfx::Direction templateDirection = touchgfx::EAST]	4
-F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:72:6:void FrontendApplicationBase::gotoWaitingScreenScreenNoTransitionImpl()	7
-F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:59:6:void FrontendApplicationBase::gotoScreen2ScreenSlideTransitionEastImpl()	8
-F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:46:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()	7
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:87:6:void FrontendApplicationBase::gotoWaitingScreenScreenNoTransitionImpl()	7
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:48:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()	7
 ../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:268:17:static touchgfx::LCD& touchgfx::HAL::lcd()	3
-F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:21:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	1
-F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:40:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransition()	1
-F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:53:6:void FrontendApplicationBase::gotoScreen2ScreenSlideTransitionEast()	1
-F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:66:6:void FrontendApplicationBase::gotoWaitingScreenScreenNoTransition()	1
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:23:1:FrontendApplicationBase::FrontendApplicationBase(Model&, FrontendHeap&)	1
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:42:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransition()	1
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:55:6:void FrontendApplicationBase::gotoScreen2ScreenSlideTransitionEast()	1
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:68:6:void FrontendApplicationBase::gotoGraficScreenSlideTransitionEast()	1
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:81:6:void FrontendApplicationBase::gotoWaitingScreenScreenNoTransition()	1
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:92:6:void FrontendApplicationBase::gotoWaitingScreenScreenSlideTransitionEast()	1
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = touchgfx::SlideTransition<touchgfx::EAST>]	1
+../../CM7/../../CM7/Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:47:5:touchgfx::SlideTransition<templateDirection>::SlideTransition(uint8_t) [with touchgfx::Direction templateDirection = touchgfx::EAST]	2
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:98:6:void FrontendApplicationBase::gotoWaitingScreenScreenSlideTransitionEastImpl()	7
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:74:6:void FrontendApplicationBase::gotoGraficScreenSlideTransitionEastImpl()	7
+F:/trabajo_final/interface/interfaz/CM7/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:61:6:void FrontendApplicationBase::gotoScreen2ScreenSlideTransitionEastImpl()	7

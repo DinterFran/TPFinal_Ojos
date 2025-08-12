@@ -13,6 +13,8 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <gui/screen2_screen/Screen2View.hpp>
 #include <gui/screen2_screen/Screen2Presenter.hpp>
+#include <gui/grafic_screen/GraficView.hpp>
+#include <gui/grafic_screen/GraficPresenter.hpp>
 #include <gui/waitingscreen_screen/WaitingScreenView.hpp>
 #include <gui/waitingscreen_screen/WaitingScreenPresenter.hpp>
 
@@ -61,6 +63,19 @@ void FrontendApplicationBase::gotoScreen2ScreenSlideTransitionEastImpl()
     touchgfx::makeTransition<Screen2View, Screen2Presenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
 
+// Grafic
+
+void FrontendApplicationBase::gotoGraficScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoGraficScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoGraficScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<GraficView, GraficPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
 // WaitingScreen
 
 void FrontendApplicationBase::gotoWaitingScreenScreenNoTransition()
@@ -72,4 +87,15 @@ void FrontendApplicationBase::gotoWaitingScreenScreenNoTransition()
 void FrontendApplicationBase::gotoWaitingScreenScreenNoTransitionImpl()
 {
     touchgfx::makeTransition<WaitingScreenView, WaitingScreenPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}
+
+void FrontendApplicationBase::gotoWaitingScreenScreenSlideTransitionEast()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoWaitingScreenScreenSlideTransitionEastImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoWaitingScreenScreenSlideTransitionEastImpl()
+{
+    touchgfx::makeTransition<WaitingScreenView, WaitingScreenPresenter, touchgfx::SlideTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }

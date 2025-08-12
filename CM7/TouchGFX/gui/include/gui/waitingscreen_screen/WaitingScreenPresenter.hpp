@@ -4,7 +4,9 @@
 #include <gui/model/ModelListener.hpp>
 #include <mvp/Presenter.hpp>
 #include "main.h"
-
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
 using namespace touchgfx;
 
 class WaitingScreenView;
@@ -27,11 +29,16 @@ public:
     virtual void deactivate();
 
     virtual ~WaitingScreenPresenter() {}
+    void updateProgress(uint8_t progress);
+    static void ledDisplayTask(void* pvParameters);
     void Start_Pattern();
+    void checkProgressUpdate();
 private:
     WaitingScreenPresenter();
 
     WaitingScreenView& view;
+    TaskHandle_t ledTaskHandle; // Handle de la muestra de leds
+    QueueHandle_t progressQueue; // cola donde se guarda el progreso de la barra
 };
 
 #endif // WAITINGSCREENPRESENTER_HPP

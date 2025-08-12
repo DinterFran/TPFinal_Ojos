@@ -44,13 +44,13 @@ WaitingScreenViewBase::WaitingScreenViewBase() :
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_ZVLI));
     add(textArea1);
 
-    boxProgress1.setXY(300, 342);
+    boxProgress1.setXY(250, 308);
     boxProgress1.setProgressIndicatorPosition(0, 0, 300, 10);
     boxProgress1.setRange(0, 100);
     boxProgress1.setDirection(touchgfx::AbstractDirectionProgress::RIGHT);
-    boxProgress1.setBackground(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BOXPROGRESS_NORMAL_SMALL_ID));
+    boxProgress1.setBackground(touchgfx::Bitmap(BITMAP_ALTERNATE_THEME_IMAGES_WIDGETS_BOXPROGRESS_THICK_MEDIUM_ID));
     boxProgress1.setColor(touchgfx::Color::getColorFromRGB(0, 240, 255));
-    boxProgress1.setValue(60);
+    boxProgress1.setValue(0);
     add(boxProgress1);
 
     button_next.setXY(615, 415);
@@ -58,6 +58,7 @@ WaitingScreenViewBase::WaitingScreenViewBase() :
     button_next.setLabelText(touchgfx::TypedText(T___SINGLEUSE_GMPK));
     button_next.setLabelColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
     button_next.setLabelColorPressed(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    button_next.setAction(buttonCallback);
     add(button_next);
 }
 
@@ -86,5 +87,12 @@ void WaitingScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton
         //When button_start clicked execute C++ code
         //Execute C++ code
         presenter->Start_Pattern();
+    }
+    if (&src == &button_next)
+    {
+        //Interaction3
+        //When button_next clicked change screen to Grafic
+        //Go to Grafic with screen transition towards East
+        application().gotoGraficScreenSlideTransitionEast();
     }
 }

@@ -11,7 +11,11 @@ public:
     virtual ~WaitingScreenView() {}
     virtual void setupScreen();
     virtual void tearDownScreen();
+    //funciones mias:
+    virtual void handleTickEvent();
+    void ProgressBar(uint8_t progress);
 protected:
+    bool increase = true;
 };
 
 #endif // WAITINGSCREENVIEW_HPP

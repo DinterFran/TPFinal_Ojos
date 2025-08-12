@@ -13,6 +13,12 @@
       </Text>
     </TextGroup>
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_647X" Alignment="Left" TypographyId="Default">
+        <Translation Language="GB">Finish</Translation>
+      </Text>
+      <Text Id="__SingleUse_2EKF" Alignment="Center" TypographyId="Default">
+        <Translation Language="GB">Back</Translation>
+      </Text>
       <Text Id="__SingleUse_1ECI" Alignment="Center" TypographyId="Default">
         <Translation Language="GB">Back</Translation>
       </Text>

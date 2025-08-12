@@ -1951,6 +1951,133 @@
         ]
       },
       {
+        "Name": "Grafic",
+        "CanvasBufferSize": 12000,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": -88,
+            "Y": -35,
+            "Width": 1024,
+            "Height": 600,
+            "RelativeFilename": "__generated\\clay_theme_images_backgrounds_1024x600_meteor_rain.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2_1",
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\clay_theme_images_bars_800x480_bottom_base.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image2",
+            "Y": 400,
+            "Width": 800,
+            "Height": 80,
+            "RelativeFilename": "__generated\\clay_theme_images_bars_800x480_bottom_base.png"
+          },
+          {
+            "Type": "ButtonWithLabel",
+            "Name": "button_back",
+            "X": 65,
+            "Y": 415,
+            "Width": 110,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_tiny_round_action.png",
+            "TextId": "__SingleUse_2EKF",
+            "ReleasedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "PressedColor": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "TextRotation": "0"
+          },
+          {
+            "Type": "Button",
+            "Name": "finish_start",
+            "X": 268,
+            "Y": 400,
+            "Width": 264,
+            "Height": 80,
+            "Pressed": "__generated\\clay_theme_images_widgets_button_regular_height_36_medium_round_disabled.png",
+            "Released": "__generated\\clay_theme_images_widgets_button_regular_height_36_medium_round_disabled.png",
+            "Preset": "clay_theme\\presets\\button\\regular\\height_36\\medium_round_disabled.json"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 377,
+            "Y": 430,
+            "Width": 58,
+            "Height": 20,
+            "TextId": "__SingleUse_647X",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "StaticGraph",
+            "Name": "graph1",
+            "X": 127,
+            "Y": 92,
+            "Width": 492,
+            "Height": 268,
+            "DataSeed": 896186645,
+            "NumberOfValues": 100,
+            "MaxX": 100.0,
+            "PrecisionX": "1",
+            "MaxY": 100.0,
+            "PrecisionY": "1",
+            "XAxisScale": 1.0,
+            "InsertRandomValues": true,
+            "GraphDrawers": [
+              {
+                "Type": "LineDrawer",
+                "LineWidth": 2,
+                "FileNameImage": "",
+                "Color": {
+                  "Red": 20,
+                  "Green": 151,
+                  "Blue": 197
+                }
+              }
+            ]
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_back"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "WaitingScreen"
+            }
+          }
+        ],
+        "CustomActions": [
+          {
+            "Name": "action1"
+          }
+        ]
+      },
+      {
         "Name": "WaitingScreen",
         "Components": [
           {
@@ -2029,20 +2156,19 @@
           {
             "Type": "BoxProgress",
             "Name": "boxProgress1",
-            "X": 300,
-            "Y": 342,
-            "Width": 200,
-            "Height": 10,
+            "X": 250,
+            "Y": 308,
+            "Width": 300,
+            "Height": 18,
             "Color": {
               "Green": 240,
               "Blue": 255
             },
             "Direction": "Right",
-            "FileNameBackground": "__generated\\alternate_theme_images_widgets_boxprogress_normal_small.png",
+            "FileNameBackground": "__generated\\alternate_theme_images_widgets_boxprogress_thick_medium.png",
             "IndicatorPositionWidth": 300,
             "IndicatorPositionHeight": 10,
-            "ProgressRangeMax": 100,
-            "ProgressInitialValue": 60
+            "ProgressRangeMax": 100
           },
           {
             "Type": "ButtonWithLabel",
@@ -2091,6 +2217,19 @@
               "Type": "ActionExecuteCode",
               "Includes": "\r\n#include <gui/waitingscreen_screen/WaitingScreenPresenter.hpp>",
               "Code": "presenter->Start_Pattern();"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button_next"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Grafic"
             }
           }
         ],

@@ -18,6 +18,8 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <gui/screen2_screen/Screen2View.hpp>
 #include <gui/screen2_screen/Screen2Presenter.hpp>
+#include <gui/grafic_screen/GraficView.hpp>
+#include <gui/grafic_screen/GraficPresenter.hpp>
 #include <gui/waitingscreen_screen/WaitingScreenView.hpp>
 #include <gui/waitingscreen_screen/WaitingScreenPresenter.hpp>
 
@@ -44,8 +46,9 @@ public:
      */
     typedef touchgfx::meta::TypeList< Screen1View,
             touchgfx::meta::TypeList< Screen2View,
+            touchgfx::meta::TypeList< GraficView,
             touchgfx::meta::TypeList< WaitingScreenView,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::Nil > > >
             > GeneratedViewTypes;
 
     /**
@@ -59,8 +62,9 @@ public:
      */
     typedef touchgfx::meta::TypeList< Screen1Presenter,
             touchgfx::meta::TypeList< Screen2Presenter,
+            touchgfx::meta::TypeList< GraficPresenter,
             touchgfx::meta::TypeList< WaitingScreenPresenter,
-            touchgfx::meta::Nil > >
+            touchgfx::meta::Nil > > >
             > GeneratedPresenterTypes;
 
     /**

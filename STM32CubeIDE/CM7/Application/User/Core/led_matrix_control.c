@@ -22,7 +22,7 @@ uint8_t in_data_count = 0;
 // Functions
 void MAX7219_SaveSelection(uint8_t num_mx, uint8_t row, uint8_t column);
 void MAX7219_Init(int brillo);
-void MAX7219_ShowSelecctions(void);
+void MAX7219_ShowSelecctions(uint8_t index);
 void MAX7219_Test_Brightness(void);
 void MatrizLedSelect(uint8_t num_mx, uint8_t row, uint8_t column);
 void MAX7219_UpdateMatrix(uint8_t matrix_update[NUM_MATRICES][NUM_FILAS]);
@@ -59,15 +59,12 @@ void MAX7219_SaveSelection(uint8_t num_mx, uint8_t row, uint8_t column){
 		in_data_count++;
 	}
 }
-void MAX7219_ShowSelecctions(void){
+void MAX7219_ShowSelecctions(uint8_t index){
 
-	for(uint8_t i = 0; i < in_data_count ; i++ ){
-		MatrizLedSelect(saved_in_data[i].n_matrix,
-						saved_in_data[i].n_row,
-						saved_in_data[i].n_column);
-		HAL_Delay(TIME_DELAY_SHOW_LED);
-	}
-	MAX7219_ClearAll();
+	MatrizLedSelect(saved_in_data[index].n_matrix,
+						saved_in_data[index].n_row,
+						saved_in_data[index].n_column);
+
 }
 void MAX7219_Test_Brightness(void){
 
